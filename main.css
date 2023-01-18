@@ -1,0 +1,350 @@
+.body {
+    padding: 0;
+    margin: 0;
+}
+.blue-bg {
+    background-color: #72adf0;
+}
+.navbar {
+    background:#2f82e2;
+    opacity: 100%;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+/*Resises the navbar logo img*/
+.navbar-brand img {
+    max-width: 4em;
+    height: auto;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    background-image: url('/assets/home_page/supeta-dock.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/*Creates an overlay over the background image*/
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+}
+/*Changes width of description box in the header depoending on device size*/
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    width: 80%;
+}
+@media (min-width: 1200px) {
+    .description {
+        left: 50%;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -55%);
+        text-align: center;
+        width: 30%;
+    }
+}
+/*Changes header title size for smaller devices*/
+.homepage-title{
+    color: #2f83e2;
+    font-size: 32px;
+    width: 100%;
+}
+/*Changes size of font in header section for larger devices*/
+@media (min-width: 576px) {
+    .homepage-title{
+        color: #2f83e2;
+        font-size: 50px;
+        width: 100%;
+    }
+}
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding-top: 30px;
+}
+@media (min-width: 576px) {
+    .description p {
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        padding-top: 0px;
+    }
+}
+/*Styling for Buttons*/
+.description button {
+    border:1px solid #2f83e2;
+    background-color:#2f83e2;
+    border-radius: 0;
+    color:#fff;
+}
+.description button:hover {
+    border:1px solid #fff;
+    background-color:#fff;
+    color:#000;
+}
+/*Section Selection*/
+.image-responsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.zero-pad {
+    padding: 0%;
+}
+/*Styling for footer*/
+.page-footer {
+    background-color: #2f83e2;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: #fff;
+    padding: 40px 0;
+}
+/*Styling For Page Banners*/
+.banner {
+    padding-bottom: 30px;
+}
+.banner img {
+    max-width: 100%;
+    max-height: auto;
+}
+.page-title img {
+    max-width: auto;
+    max-height: 7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.page-title-text {
+    color: #fff;
+}
+.page-intro p {
+    color: #fff;
+    font-size: x-large;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.pad-left {
+    padding-left: 2.5em;
+}
+/*Adjusts left padding for small devices*/
+@media (max-width: 576px) {
+    .pad-left {
+        padding-left: 15px;
+    }
+}
+.pad-right {
+    padding-right: 2.5em;
+}
+/*Adjusts column gutters (padding) for smaller devices*/
+@media (max-width: 576px) {
+    .no-gutters-custom {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+.content-box {
+    background-color: #2f82e2d3;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.join-button-container {
+    background-color: rgb(255, 0, 0);
+    padding: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+
+}
+.join-button {
+    border:1px solid #2f83e2;
+    background-color:#2f83e2;
+    border-radius: 0;
+    color:#fff;
+}
+
+.join-button-border {
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 7%;
+}
+.content-title {
+    color: #fff;
+}
+.content-text {
+    color: #fff;
+    font-size: large;
+    list-style-position: inside;
+}
+.news-box {
+    position: relative;
+    margin: 10px;
+}
+.text-block {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+}
+.text-white {
+    color: #fff;
+}
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+}
+  
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/*Hides form elements temporarily until box chhecked*/
+.conditional {
+    display: none;
+}
+/*centers text over an image*/
+.center-overlap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+/*Used to make text in both columns start at same position on large and medium devices*/
+.footer-link-pad {
+    padding-top: 0rem;
+}
+/*Adjusts padding for small devices*/
+@media (min-width: 768px) {
+    .footer-link-pad {
+        padding-top: 1.9rem;
+    }
+}
+/*Pads the Contact Us footer title for smaller screens*/
+.footer-title-pad {
+    padding-top: 1.9rem;
+}
+/*Adjusts padding for larger devices*/
+@media (min-width: 768px) {
+    .footer-title-pad {
+        padding-top: 0rem;
+    }
+}
+/*Used to pad top and bottom of inline images in the blog*/
+.inline-img {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+@media (max-width: 576px) {
+    .inline-img {
+        width: 100%;
+    }
+}
+.gallery-img {
+    position: relative;
+    margin: 10px;
+    max-width: 23.33%;
+    max-height: auto;
+    min-width: 300px;
+    min-height: auto;
+    object-fit: cover;
+}
+.gallery-container {
+    background-color: #2f82e2d3;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.gallery-link {
+    display: flex;
+    margin: 10px;
+    max-width: 23.33%;
+    max-height: auto;
+    min-width: 300px;
+    min-height: auto;
+}
+/*Used to scale social icons in footer*/
+.icon {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+.pad-top-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Padds an image when layout changes from horizontal row to vertical column*/
+.vertical-pad {
+    padding-top: 20px;
+}
+@media (min-width: 768px) {
+    .vertical-pad {
+        padding-top: 0px;
+    }
+}
+/*Used to pad the top of a title inserted below an image*/
+.title-top-pad {
+    padding-top: 1em;
+}
+.contact-form {
+    height: 1000px;
+}
+.small-calendar {
+    height: 700px;
+}
+@media (max-width: 576px) {
+    .large-calendar {
+        display: none;
+    }
+}
+@media (min-width: 576px) {
+    .small-calendar {
+        display: none;
+    }
+}
+.gallery-block {
+    height: 100%;
+}
